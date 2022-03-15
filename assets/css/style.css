@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&family=Rock+Salt&display=swap');
 
 *,
 *::after,
@@ -9,7 +9,7 @@
 /*header*/
 
 h1 {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 50px;
     color: purple;
     text-align: center;
@@ -17,27 +17,27 @@ h1 {
 }
 
 h2 {
-    font-family: Roboto;
+
     font-size: 30px;
     color: purple;
     text-align: center;
 
 }
 
-font-family: Roboto;
-font-size: 30px;
-color: purple;
-text-align: center;
-
-
 
 body {
     margin: 0;
+    font-family: Roboto;
+    color: rgb(32, 24, 24);
 }
 
 /*play area border*/
 
 .board {
+    font-family: Rock-Salt, sans-serif;
+    font-size: 90px;
+    text-align: center;
+    line-height: 100px;
     width: 100vw;
     height: 50vh;
     display: grid;
@@ -53,6 +53,18 @@ body {
     height: 100px;
     background-color: white;
     border: 1px solid black;
+}
+
+/*x and o hover effect*/
+
+.o-hover:hover::after {
+    content: "o";
+    opacity: 0.4;
+}
+
+.x-hover:hover::after {
+    content: "x";
+    opacity: 0.4;
 }
 
 /* remove border for edges */
@@ -92,7 +104,7 @@ body {
 }
 
 #score {
-    color: green;
+    color: purple;
     font-weight: bold;
 }
 
