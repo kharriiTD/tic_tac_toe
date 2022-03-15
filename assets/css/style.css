@@ -6,13 +6,69 @@
     box-sizing: border-box;
 }
 
+/*header*/
+
 h1 {
     font-family: Roboto;
-    font-size: 75px;
+    font-size: 50px;
     color: purple;
     text-align: center;
 }
 
+h2 {
+    font-family: Roboto;
+    font-size: 30px;
+    color: purple;
+    text-align: center;
+}
+
+
 body {
-    margin
+    margin: 0;
+}
+
+/*play area border*/
+
+.board {
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 2px;
+}
+
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* remove border for edges */
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+    border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+    border-left: none;
 }
