@@ -19,17 +19,36 @@
 
 <body>
     <h2>Lets Play</h2>
-    <div>board
+    <button class=info-button type="button"><i class="fa-solid fa-circle-question"></i></i></button>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Lets play agian!</button>
+    </div>
+
+    <div>
+        <p class="scores">play1 <span id="score">0</span></p>
+        <p class="scores">play2 <span id="score">0</span></p>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 
 
-<div>
-    <p class="scores">play1 <span id="score">0</span></p>
-    <p class="scores">play2 <span id="score">0</span></p>
-</div>
 
-<script src="assets/js/script.js"></script>
-</body>
 
 </html>

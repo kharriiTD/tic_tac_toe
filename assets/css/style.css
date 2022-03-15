@@ -1,3 +1,7 @@
 body {
     background-color: rgb(235, 224, 224);
 }
+
+#info-button {
+    font-size: 200px;
+}
