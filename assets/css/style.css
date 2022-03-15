@@ -1,7 +1,18 @@
-body {
-    background-color: rgb(235, 224, 224);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
-#info-button {
-    font-size: 200px;
+h1 {
+    font-family: Roboto;
+    font-size: 75px;
+    color: purple;
+    text-align: center;
+}
+
+body {
+    margin
 }
