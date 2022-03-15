@@ -13,6 +13,7 @@ h1 {
     font-size: 50px;
     color: purple;
     text-align: center;
+    text-transform: uppercase
 }
 
 h2 {
@@ -20,7 +21,14 @@ h2 {
     font-size: 30px;
     color: purple;
     text-align: center;
+
 }
+
+font-family: Roboto;
+font-size: 30px;
+color: purple;
+text-align: center;
+
 
 
 body {
@@ -71,4 +79,35 @@ body {
 .cell:nth-child(4),
 .cell:nth-child(7) {
     border-left: none;
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+.scores {
+    display: inline-block;
+    padding: 25px;
+
+}
+
+.winning-message {
+    text-align: center;
+}
+
+.btn-start::after {
+    content: attr(data-type);
+    font-size: 1rem;
+    color: #445361;
+    position: relative;
+    left: 0.5em;
+    padding-inline-start: 20%;
 }
