@@ -81,6 +81,9 @@ body {
     border-left: none;
 }
 
+/* Score area*/
+
+
 .score-area {
     margin: 5px auto;
     width: 60%;
@@ -103,11 +106,17 @@ body {
     text-align: center;
 }
 
-.btn-start::after {
-    content: attr(data-type);
-    font-size: 1rem;
-    color: #445361;
-    position: relative;
-    left: 0.5em;
-    padding-inline-start: 20%;
+/*bottom */
+
+.btn {
+    border: 1px solid black;
+    color: black;
+    margin-inline: 45px;
+    margin-bottom: 2px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(216, 203, 203);
+    border-radius: 10px;
+    box-shadow: 0 5px rgb(141, 145, 139);
+
 }
