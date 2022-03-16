@@ -13,7 +13,8 @@ h1 {
     font-size: 50px;
     color: purple;
     text-align: center;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #d46bbf;
 }
 
 h2 {
@@ -34,7 +35,7 @@ body {
 /*play area border*/
 
 .board {
-    font-family: Rock-Salt, sans-serif;
+    font-family: Rock salt, sans-serif;
     font-size: 90px;
     text-align: center;
     line-height: 100px;
@@ -118,7 +119,7 @@ body {
     text-align: center;
 }
 
-/*bottom */
+/*botton */
 
 .btn {
     border: 1px solid black;
