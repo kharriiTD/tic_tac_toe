@@ -9,18 +9,12 @@
     <meta name="keywords" content="tic tac toe game, fun games">
     <link rel="icon" type="image/x-icon" href="/assets/images/2679549.ico">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Tic Tac Toe
-
-
-
-    </title>
+    <title>Tic Tac Toe</title>
 </head>
 <h1>Tic Tac Toe </h1>
 
 <body>
     <h2 class="game--status"></h2>
-
-
 
     <div class="board" id="board">
         <div class="cell" data-cell></div>
@@ -44,6 +38,25 @@
         <p class="scores">Player 1 <span id="score">0</span></p>
         <p class="scores">Player 2 <span id="score">0</span></p>
     </div>
+    <button tic-tac-target="#modal"><i class="fa-solid fa-circle-question"></i></button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">RULES FOR TIC TAC TOE</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+
+
+            <p> 1. The game is played on a grid that's 3 squares by 3 squares. </p>
+
+            <p> 2. You are X, your friend is O. Players take turns putting their marks in empty squares. </p>
+
+            <p> 3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner. </p>
+
+            <p> 4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie. </p>
+        </div>
+    </div>
+    <div id="overlay"></div>
 
 
     <script src="assets/js/script.js"></script>

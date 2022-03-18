@@ -1,6 +1,7 @@
 const statusDisplay = document.querySelector('.game--status');
 
 let cells = document.querySelectorAll('.cell')
+
 cells = Array.from(cells)
 
 let currentPlayer = "X"
@@ -20,16 +21,11 @@ function checkForWinner() {
     winningCombinations.forEach(function(combination) {
         let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer)
         if (check) {
-            highlightCells(combination)
+
         }
     })
 }
 
-function highlightCells(combination) {
-    combination.forEach(function(idx) {
-        cells[idx].classList.add("highlight")
-    })
-}
 
 cells.forEach(function(cell) {
     cell.addEventListener('click', function() {
