@@ -36,9 +36,9 @@ body {
 
 .board {
     font-family: Rock salt, sans-serif;
-    font-size: 90px;
+    font-size: 60px;
     text-align: center;
-    line-height: 100px;
+    line-height: 90px;
     width: 100vw;
     height: 50vh;
     display: grid;
