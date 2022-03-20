@@ -32,13 +32,13 @@ body {
     color: rgb(32, 24, 24);
 }
 
-/*play area border*/
+/*play area */
 
 .board {
     font-family: Rock salt, sans-serif;
     font-size: 60px;
     text-align: center;
-    line-height: 90px;
+    line-height: 80px;
     width: 100vw;
     height: 50vh;
     display: grid;

@@ -1,8 +1,14 @@
 const statusDisplay = document.querySelector('.game--status');
 
-let cells = document.querySelectorAll('.cell')
+const cells = document.querySelectorAll(".cell")
 
-cells = Array.from(cells)
+cells.forEach((cell, index) =>
+
+    cell.addEventListener('click', event => {
+        const clickedCell = event.target;
+        clickedCell.innerText = "X";
+        console.log(index)
+    }));
 
 let currentPlayer = "X"
 
@@ -17,21 +23,19 @@ let winningCombinations = [
     [2, 4, 6]
 ]
 
-function checkForWinner() {
-    winningCombinations.forEach(function(combination) {
-        let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer)
-        if (check) {
-
-        }
-    })
+function handleCellClick(clickCellEvent) {
+    const clickedCell = clickCellEvent.target;
+    const ClickCellindex = parseInt(clickedCell.getAttribute('data-cell'));
+    console.log("Clicked")
 }
 
+clickedCell.style.pointerEvents = 'none';
 
-cells.forEach(function(cell) {
-    cell.addEventListener('click', function() {
-        if (cell.innerText.trim() != "") return
-        cell.innerText = currentPlayer
-        checkForWinner()
-        currentPlayer = currentPlayer == "X" ? "O" : "X"
-    })
-})
+
+function changePlayer() {
+    currentPlayer = currentPlayer === "X" ? "O" : "X";
+
+    clickedCell.style.pointerEvents = 'none';
+
+
+}
